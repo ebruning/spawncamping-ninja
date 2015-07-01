@@ -7,22 +7,29 @@
     <title>Mobile ID Capture Demo</title>
     <script src="lib/KofaxMobileHtmlCaptureLib.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Mobile ID Capture Demo</h1>
-    <h3>Choose your region</h3>
-      <select id="regionSelect">Capture ID</select>
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+          <h1>Mobile ID Capture Demo</h1>
+          <h3>Choose your region</h3>
+            <select id="regionSelect"></select>
 
-    <h3>Capture ID</h3>
-    <input type="file" id="take-picture" accept="image/jpeg">
+          <h3>Capture ID</h3>
+          <input type="file" class="filestyle" id="take-picture" accept="image/jpeg">
 
-    <h3>ID Image</h3>
-    <div id="ins-result"></div>
-    <canvas id="raw-canvas"></canvas>
+          <h3>ID Image</h3>
+          <div id="ins-result"></div>
+          <canvas id="raw-canvas" class="raw-image"></canvas>
 
-    <h3>Server response:</h3>
-    <div id="rtti-result"></div>
-
+          <h3>Server response:</h3>
+          <div id="rtti-result"></div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
