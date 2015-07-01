@@ -12,7 +12,7 @@ window.onload = function() {
 
   var select = document.getElementById('regionSelect');
 
-  select.innerHTML = Object.keys(demoUrls).map(function (data) {
-    return '<option value="' + demoUrls[data] + '">' + data + '</option>';
+  select.innerHTML = Object.keys(regionUls).map(function (data) {
+    return '<option value="' + regionUls[data] + '">' + data + '</option>';
   });
 }
