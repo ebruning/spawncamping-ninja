@@ -1,47 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <title></title>
+    <title>Mobile ID Capture Demo</title>
+    <script src="lib/KofaxMobileHtmlCaptureLib.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>HTML 5 Mobile ID Capture</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <div class="dropdown" style="text-align:center">
-              <button class="btn btn-default dropdown-toggle"
-                      type="button"
-                      id="dropdownMenu1"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="true">
-                        Select region
-              <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-          </div>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <h1>Mobile ID Capture Demo</h1>
+    <h3>Choose your region</h3>
+      <select if="regionSelect"></select>
   </body>
 </html>
