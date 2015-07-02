@@ -70,15 +70,14 @@ window.onload = function() {
     var dynamicHTML = "<div>";
 
     for (var field in res) {
-      for (var count = 0; count < fields.length; count++ ) {
-        if (res[field.name] === fields[count]) {
+    	for (var count = 0; count < fields.length; count++ ) {
+    		if (res[field].name === fields[count]) {
           dynamicHTML += "<div><h6>" + fields[count] + "</h6></div><div><input type='text' style='height:50px;font-size:20px;padding-left:5px;padding-right:10px' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
-        }
-      }
+    			break;
+    		}
+    	}
     }
-    // for (var field in res) {
-    //   dynamicHTML += "<div><h6>" + res[field].name + "</h6></div><div><input type='text' style='height:50px;font-size:20px;padding-left:5px;padding-right:10px' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
-    // }
+
     dynamicHTML += "</div>";
     resultData.innerHTML = dynamicHTML;
     instruction.innerHTML = '';
