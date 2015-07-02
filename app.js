@@ -1,3 +1,5 @@
+/*jshint devel:true */
+
 window.onload = function() {
   var serverResponse;
   var instruction = document.getElementById('ins-result');
@@ -32,23 +34,21 @@ window.onload = function() {
           var delta = (finishTime - startTime) / 1000;
           var message = 'Original Size: ' + originalSize + ' kb\nScaled Size: ' + scaledSize + ' kb.\nTime: ' + delta + ' seconds.';
           if (showDiagnosticInformation) {
-              alert(message);
+              instruction.innerHTML = message;
           }
 
           serverResponse = JSON.parse(data);
           if (serverResponse.error) {
-              alert("Error in server response: " + serverResponse.error);
+              instruction.innerHTML = "Error in server response: " + serverResponse.error;
           } else {
               displayExtractedFields(serverResponse.fields);
           }
       }, function(errorResponse) {
-          alert('Error in processing request: ' + errorResponse.errorMessage);
+          instruction.innerHTML = 'Error in processing request: ' + errorResponse.errorMessage;
       });
   });
 
   function displayExtractedFields(res) {
-    console.log("Enter displayExtractedFields");
-    console.log(JSON.stringify(res));
     var fields = [
       "FirstName",
       "MiddleName",
@@ -81,7 +81,5 @@ window.onload = function() {
     dynamicHTML += "</div>";
     resultData.innerHTML = dynamicHTML;
     instruction.innerHTML = '';
-
-    console.log("exit displayExtractedFields");
   }
 };
