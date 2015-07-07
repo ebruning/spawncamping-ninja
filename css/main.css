@@ -9,10 +9,14 @@ h3 {
 
 #index-text,
 #index-field {
-  font-weight: bold;
   font-family: 'Oswald', sans-serif;
 }
 
+#index-field {
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
 #index-text {
   font-weight: 300;
   font-size: 16px;
