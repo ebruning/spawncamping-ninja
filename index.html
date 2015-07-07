@@ -8,6 +8,7 @@
     <script src="lib/KofaxMobileHtmlCaptureLib.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -21,9 +22,11 @@
           <h3>Capture ID</h3>
           <input type="file" class="filestyle" id="take-picture" accept="image/jpeg">
 
-          <h3>ID Image</h3>
-          <div id="ins-result"></div>
-          <canvas id="raw-canvas" class="raw-image"></canvas>
+          <div id="captured_image" class="clearfix">
+            <h3>ID Image</h3>
+            <div id="ins-result"></div>
+            <canvas id="raw-canvas" class="raw-image"></canvas>
+          </div>
 
           <h3>Server response:</h3>
           <div id="rtti-result"></div>

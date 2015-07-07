@@ -72,7 +72,7 @@ window.onload = function() {
     for (var field in res) {
     	for (var count = 0; count < fields.length; count++ ) {
     		if (res[field].name === fields[count]) {
-          dynamicHTML += "<div>" + fields[count] + "</div><div><input type='text' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
+          dynamicHTML += "<div id=\"index-field\">" + fields[count] + "</div><div><input id=\"index-text\" type='text' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
     			break;
     		}
     	}
