@@ -48,6 +48,41 @@ window.onload = function() {
       });
   });
 
+  function parseFieldName(name) {
+    if ((name === "Address") ||
+        (name === "City") ||
+        (name === "Sate") ||
+        (name === "ZIP") ||
+        (name === "Country") ||
+        (name === "Gender") ||
+        (name === "Eyes") ||
+        (name === "Hair") ||
+        (name === "Height") ||
+        (name === "License")) {
+      return name;
+    }
+
+    if(name === "FirstName"){
+      return "First Name";
+    }
+
+    if(name === "MiddleName"){
+      return "Middle Name";
+    }
+
+    if(name === "LastName"){
+      return "Last Name";
+    }
+
+    if(name === "IDNumber"){
+      return "ID Number";
+    }
+
+    if(name === "IssueDate"){
+      return "Issue Date";
+    }
+  }
+
   function displayExtractedFields(res) {
     var fields = [
       "FirstName",
@@ -72,7 +107,7 @@ window.onload = function() {
     for (var field in res) {
     	for (var count = 0; count < fields.length; count++ ) {
     		if (res[field].name === fields[count]) {
-          dynamicHTML += "<div id=\"index-field\">" + fields[count] + "</div><div><input id=\"index-text\" type='text' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
+          dynamicHTML += "<div id=\"index-field\">" + parseFieldName(fields[count]) + "</div><div><input id=\"index-text\" type='text' value='" + res[field].text + "'disabled='disabled' /></div><br/>";
     			break;
     		}
     	}
