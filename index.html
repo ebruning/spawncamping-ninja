@@ -21,14 +21,18 @@
           <select id="regionSelect"></select>
 
           <h3>Capture ID</h3>
-          <input type="file" class="filestyle btn" id="take-picture" accept="image/jpeg" data-buttonname="btn-primary" data-input="false" data-buttontext="Capture Image" data-iconname="icon-camera">
+            <input type="file" class="filestyle btn" id="take-picture" accept="image/jpeg" data-buttonname="btn-primary" data-input="false" data-buttontext="Capture Image" data-iconname="icon-camera">
 
-          <h3>ID Image</h3>
-          <div id="ins-result"></div>
-          <canvas id="raw-canvas" class="raw-image"></canvas>
+          <div id="image-section">
+            <h3>ID Image</h3>
+            <div id="ins-result"></div>
+            <canvas id="raw-canvas" class="raw-image"></canvas>
+          </div>
 
-          <h3>Server response:</h3>
-          <div id="rtti-result"></div>
+          <div id="rtti-section">
+            <h3>Server response:</h3>
+            <div id="rtti-result"></div>
+          </div>
         </div>
       </div>
     </div>
