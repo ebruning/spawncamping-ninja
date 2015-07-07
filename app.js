@@ -28,7 +28,7 @@ window.onload = function() {
       var originalSize = document.getElementById('take-picture').files[0].size / 1024;
       var scaledSize = res.length / 1024;
 
-      instruction.innerHTML = 'Please wait... While getting response from server';
+      instruction.innerHTML = 'Please wait.\rReading license from server.';
       kfxImage.export({ utf8Image: res, url: select.value }, function (data) {
           var finishTime = new Date();
           var delta = (finishTime - startTime) / 1000;
