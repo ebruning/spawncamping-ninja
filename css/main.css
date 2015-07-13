@@ -23,6 +23,16 @@ select {
   padding-bottom: 10px;
 }
 
+.bootstrap-filestyle.input-group,
+span.group-span-filestyle,
+label.btn.btn-primary {
+  width: 100%;
+}
+
+#capture-button {
+    margin-top: 20px;
+}
+
 #collapsible-section {
 }
 
