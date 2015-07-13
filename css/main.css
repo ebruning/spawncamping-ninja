@@ -23,6 +23,13 @@ select {
   padding-bottom: 10px;
 }
 
+#collapsible-section {
+}
+
+#slideRtti,
+#slideImage {
+}
+
 #index-text,
 #index-field {
   font-family: 'Oswald', sans-serif;
