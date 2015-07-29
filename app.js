@@ -7,13 +7,13 @@ window.onload = function() {
   var showDiagnosticInformation = false;
 
   var regionUls = {
-    "United States": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?xCropImage=True",
+    "United States": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?processImage=true",
     "Canada": "//mobiledemo.kofax.com/mobilesdk/api/checkdeposit1_1?processimage=true&xregion=Canada",
-    "Africa": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?xCropImage=True&xregion=Africa",
+    "Africa": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?processImage=true&xregion=Africa",
     "Asia": "//mobiledemo.kofax.com/mobilesdk/api/checkdeposit1_1?processimage=true&xregion=Asia",
-    "Australia": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?xCropImage=True&xregion=Australia",
+    "Australia": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?processImage=true&xregion=Australia",
     "Europe": "//mobiledemo.kofax.com/mobilesdk/api/checkdeposit1_1?processimage=true&xregion=Europe",
-    "Latin America": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?xCropImage=True&xregion=Latin%20America",
+    "Latin America": "//mobiledemo.kofax.com/mobilesdk/api/mobileid?processImage=true&xregion=Latin%20America",
     "Singapore": "//mobiledemo.kofax.com/mobilesdk/api/checkdeposit1_1?processimage=true&xregion=Asia"
   };
 
